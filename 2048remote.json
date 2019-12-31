@@ -1,0 +1,180 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "two zero four eight with remote",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "moveIntent",
+                    "slots": [
+                        {
+                            "name": "direction",
+                            "type": "direction"
+                        }
+                    ],
+                    "samples": [
+                        "all the tiles to the {direction}",
+                        "move all the tiles to {direction}",
+                        "move all to {direction}",
+                        "shift to {direction}",
+                        "shift the tiles to {direction}",
+                        "shift {direction}",
+                        "slide the tiles to {direction}",
+                        "slide {direction}",
+                        "towards {direction}",
+                        "move the tiles towards {direction}",
+                        "go towards {direction}",
+                        "go to {direction}",
+                        "I say {direction}",
+                        "{direction} direction",
+                        "{direction} tiles",
+                        "move to the {direction}",
+                        "move to {direction}",
+                        "tiles to the {direction}",
+                        "to my {direction}",
+                        "to your {direction}",
+                        "move the tiles {direction}",
+                        "swipe {direction}",
+                        "to {direction}",
+                        "move {direction}",
+                        "{direction}"
+                    ]
+                },
+                {
+                    "name": "restartIntent",
+                    "slots": [],
+                    "samples": [
+                        "let's do it again",
+                        "try again",
+                        "reset the board",
+                        "reset the game",
+                        "start the game again",
+                        "reset the game",
+                        "reset",
+                        "restart the game",
+                        "restart"
+                    ]
+                },
+                {
+                    "name": "continueIntent",
+                    "slots": [],
+                    "samples": [
+                        "resume please",
+                        "please resume",
+                        "resume the game",
+                        "resume",
+                        "higher tile",
+                        "more score",
+                        "more game",
+                        "play for a higher tile",
+                        "play more",
+                        "more",
+                        "let's play more",
+                        "continue the game",
+                        "continue playing",
+                        "keep playing",
+                        "continue",
+                        "keep going"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "pauseIntent",
+                    "slots": [],
+                    "samples": [
+                        "wait",
+                        "game pause",
+                        "pause game",
+                        "pause the game",
+                        "pause"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "direction",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Down",
+                                "synonyms": [
+                                    "fall",
+                                    "drop",
+                                    "south",
+                                    "down",
+                                    "downwards",
+                                    "downward",
+                                    "backwards",
+                                    "backward"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Up",
+                                "synonyms": [
+                                    "jump",
+                                    "rise",
+                                    "forwards",
+                                    "forward",
+                                    "upward",
+                                    "upwards",
+                                    "north",
+                                    "up"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Right",
+                                "synonyms": [
+                                    "rightwards",
+                                    "rightward",
+                                    "east",
+                                    "right"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Left",
+                                "synonyms": [
+                                    "leftwards",
+                                    "leftward",
+                                    "west",
+                                    "left"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

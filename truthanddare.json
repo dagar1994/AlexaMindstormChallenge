@@ -1,0 +1,125 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "truth n. dare",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "numberOfPlayers",
+                    "slots": [
+                        {
+                            "name": "players",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{players} of us",
+                        "{players} player",
+                        "{players} players",
+                        "{players}",
+                        "{players} players please.",
+                        "I would like to play as {players} players please.",
+                        "I pick {players} players please.",
+                        "I select {players} players please.",
+                        "I want to play as {players} players please.",
+                        "I want to play as {players} players.",
+                        "I would want to play as {players} players.",
+                        "Play as {players} players.",
+                        "Begin as {players} players.",
+                        "Begin as {players} players please.",
+                        "I shall choose {players} players.",
+                        "I shall pick {players} players.",
+                        "I shall select {players} players."
+                    ]
+                },
+                {
+                    "name": "startIntent",
+                    "slots": [],
+                    "samples": [
+                        "spin the robot",
+                        "spin",
+                        "game start",
+                        "start game",
+                        "we are ready",
+                        "start the game",
+                        "ready",
+                        "start"
+                    ]
+                },
+                {
+                    "name": "choiceIntent",
+                    "slots": [
+                        {
+                            "name": "choice",
+                            "type": "choices"
+                        }
+                    ],
+                    "samples": [
+                        "i select {choice}",
+                        "i pick {choice}",
+                        "choose {choice}",
+                        "i choose {choice}",
+                        "ask me {choice}",
+                        "give me {choice}",
+                        "{choice}"
+                    ]
+                },
+                {
+                    "name": "doneIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes i did",
+                        "i completed the dare",
+                        "next turn",
+                        "completed",
+                        "we are done",
+                        "next",
+                        "done"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "choices",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dare",
+                                "synonyms": [
+                                    "task"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "truth",
+                                "synonyms": [
+                                    "question"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
